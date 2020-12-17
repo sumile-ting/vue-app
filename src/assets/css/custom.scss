@@ -1,0 +1,6 @@
+@import './theme.scss';
+
+.app-aside {
+  padding-top: 0px;
+  @include backgroundColorBottomLeft();
+}

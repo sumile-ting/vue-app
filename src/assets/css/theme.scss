@@ -1,0 +1,64 @@
+$font-color-theme1:red;
+$font-color-theme2:green;
+$font-color-theme3:yellow;
+
+
+@mixin fontColor(  ) {
+  [data-theme="theme1"] & {
+    color:$font-color-theme1;
+  }
+  [data-theme="theme2"] & {
+    color:$font-color-theme2;
+  }
+  [data-theme="theme3"] & {
+    color:$font-color-theme3;
+  }
+}
+
+$background-color-theme1-topleft: #008df7;
+$background-color-theme2-topleft: green;
+$background-color-theme3-topleft: yellow;
+@mixin backgroundColorTopLeft(){
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1-topleft;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2-topleft;
+  }
+  [data-theme="theme3"] & {
+    background-color:$background-color-theme3-topleft;
+  }
+}
+
+$background-color-theme1-topright: #0270c1;
+$background-color-theme2-topright: green;
+$background-color-theme3-topright: yellow;
+@mixin backgroundColorTopRight(){
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1-topright;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2-topright;
+  }
+  [data-theme="theme3"] & {
+    background-color:$background-color-theme3-topright;
+  }
+}
+
+
+$background-color-theme1-bottomleft: #2a2e35;
+$background-color-theme2-bottomleft: green;
+$background-color-theme3-bottomleft: yellow;
+@mixin backgroundColorBottomLeft(){
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1-bottomleft;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2-bottomleft;
+  }
+  [data-theme="theme3"] & {
+    background-color:$background-color-theme3-bottomleft;
+  }
+
+}
+
