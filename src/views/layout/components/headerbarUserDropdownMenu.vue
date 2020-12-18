@@ -13,7 +13,7 @@
                         <i class="fa fa-th-list"> </i> 布局选择
                     </el-menu-item>
                     <el-menu-item index="2-2" @click="themeSelectorDialogVisible = true">
-                        <i class="fa fa-th-list"> </i> 主题中心
+                        <i class="fa fa-magic"> </i> 主题中心
                     </el-menu-item>
                     <el-menu-item index="2-3" @click="logout">
                         <i class="fa fa-sign-out"> </i> 退出
