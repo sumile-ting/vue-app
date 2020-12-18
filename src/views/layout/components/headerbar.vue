@@ -187,7 +187,6 @@
         color: #ffffff;
         width: 230px;
         height: 55px;
-        background-color: #008df7;
         margin-left: -50px !important;
     }
 

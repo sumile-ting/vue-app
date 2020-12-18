@@ -10,7 +10,7 @@ import HighCharts from "highcharts";
 
 //引入font-awesome
 import 'font-awesome/css/font-awesome.css';
-
+import './assets/css/custom.scss'
 
 //关闭生产模式下给出的提示
 Vue.config.productionTip = false;

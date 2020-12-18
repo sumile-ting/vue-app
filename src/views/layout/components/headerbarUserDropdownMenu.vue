@@ -150,8 +150,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-    @import '../../../assets/css/theme.scss';
+<style  scoped>
+
 
     p strong {
         font-size: 15px;
@@ -185,38 +185,4 @@
         box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
     }
 
-    .theme-option.theme1 .bottom-left {
-        background-color: $background-color-theme1-bottomleft;
-    }
-
-    .theme-option.theme2 .bottom-left {
-        background-color: $background-color-theme2-bottomleft;
-    }
-
-    .theme-option.theme3 .bottom-left {
-        background-color: $background-color-theme3-bottomleft;
-    }
-
-    .theme-option.theme1 .top-left {
-        background-color: $background-color-theme1-topleft;
-    }
-
-    .theme-option.theme2 .top-left {
-        background-color: $background-color-theme2-topleft;
-    }
-
-    .theme-option.theme3 .top-left {
-        background-color: $background-color-theme3-topleft;
-    }
-    .theme-option.theme1 .top-right {
-        background-color: $background-color-theme1-topright;
-    }
-
-    .theme-option.theme2 .top-right {
-        background-color: $background-color-theme2-topright;
-    }
-
-    .theme-option.theme3 .top-right {
-        background-color: $background-color-theme3-topright;
-    }
 </style>

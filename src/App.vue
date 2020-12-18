@@ -44,9 +44,7 @@
 </script>
 
 <style>
-@import '../src/assets/css/theme.scss';
 @import '../src/assets/css/global.css';
-@import '../src/assets/css/custom.scss';
 @import '../src/assets/css/iconfont/iconfont.css';
 
 </style>

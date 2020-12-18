@@ -86,7 +86,7 @@
     };
 </script>
 
-<style scoped>
+<style  scoped>
 
     .app-aside-menu-vertical {
         overflow-y: auto;

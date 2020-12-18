@@ -2,5 +2,52 @@
 
 .app-aside {
   padding-top: 0px;
-  @include backgroundColorBottomLeft();
+  @include customArrtibute('background-color', $background-color-theme1-bottomleft, $background-color-theme2-bottomleft, $background-color-theme3-bottomleft);
 }
+
+.el-footer, .el-header {
+ @include customArrtibute('background-color', $background-color-theme1-topright, $background-color-theme2-topright, $background-color-theme3-topright);
+}
+
+.title-box {
+  @include customArrtibute('background-color', $background-color-theme1-topleft, $background-color-theme2-topleft, $background-color-theme3-topleft);
+}
+
+.theme-option.theme1 .bottom-left {
+  background-color: $background-color-theme1-bottomleft;
+}
+
+.theme-option.theme2 .bottom-left {
+  background-color: $background-color-theme2-bottomleft;
+}
+
+.theme-option.theme3 .bottom-left {
+  background-color: $background-color-theme3-bottomleft;
+}
+
+.theme-option.theme1 .top-left {
+  background-color: $background-color-theme1-topleft;
+}
+
+.theme-option.theme2 .top-left {
+  background-color: $background-color-theme2-topleft;
+}
+
+.theme-option.theme3 .top-left {
+  background-color: $background-color-theme3-topleft;
+}
+
+.theme-option.theme1 .top-right {
+  background-color: $background-color-theme1-topright;
+}
+
+.theme-option.theme2 .top-right {
+  background-color: $background-color-theme2-topright;
+}
+
+.theme-option.theme3 .top-right {
+  background-color: $background-color-theme3-topright;
+}
+
+
+
