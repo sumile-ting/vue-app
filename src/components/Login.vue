@@ -56,7 +56,7 @@ export default {
           return false;
         }
         // 开始进行登录
-        this.$router.push("/myPortal"); // 跳转到首页
+        this.$router.push("/Main"); // 跳转到首页
       });
     },
     reset(formName) {

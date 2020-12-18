@@ -25,6 +25,9 @@ routes:[
   {
     path: "/Main",
     component: Layout,
+    redirect: () => {
+      return {path: '/myPortal/protal-self'};
+    },
     children: [
       Home
     ]
