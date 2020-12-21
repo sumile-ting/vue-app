@@ -4,7 +4,7 @@ import router from "./router";
 
 import store from "@/store";
 import "element-ui/lib/theme-chalk/index.css";
-import globalInfos from "./costants/global"
+import globalInfos from "./constants/global"
 import App from "./App.vue";
 import HighCharts from "highcharts";
 

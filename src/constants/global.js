@@ -871,7 +871,7 @@ const ASIDE_ITEMS = {
             url: "/equipmentMgt/ledger",
             name: "设备台账",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/equipmentMgt/measure",
@@ -1055,7 +1055,7 @@ const ASIDE_ITEMS = {
         //   url: "/productionMgt/statisticalReports",
         //   name: "统计报表",
         //   icon: "el-icon-document",
-        //   
+        //
         // }
         {
             url: "/productionMgt/statisticalReports",
@@ -1079,7 +1079,7 @@ const ASIDE_ITEMS = {
                 {
                     url: "/hsse/institutions/managementNetwork",
                     name: "管理网络",
-                    
+
                 },
                 {
                     url: "/hsse/institutions/duty",
@@ -1553,13 +1553,13 @@ const ASIDE_ITEMS = {
             url: "/SRmgt/authorityMgt",
             name: "信息系统权限管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/SRmgt/materialMgt",
             name: "项目物资管理",
             icon: "el-icon-document",
-            
+
         }
     ],
     engTechnology: [
@@ -1700,75 +1700,75 @@ const ASIDE_ITEMS = {
         //   url: "/financialMgt/costProjectManagement",
         //   name: "成本项目管理",
         //   icon: "el-icon-document",
-        //   
+        //
         // },
 
         {
             url: "/financialMgt/formLook",
             name: "经营报表查看",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/guiKouDetails",
             name: "归口详情",
             icon: "el-icon-document",
-            
+
         },
 
         {
             url: "/financialMgt/planManagement",
             name: "计划管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/operatingStatement",
             name: "经营报表",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/departmentStatement",
             name: "归口部门报表",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/basicData",
             name: "基础数据",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/programManage",
             name: "项目管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/planLook",
             name: "计划查看",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/planDeal",
             name: "计划分配",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/basicUnit",
             name: "基层单位",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/financialMgt/company",
             name: "公司报表",
             icon: "el-icon-document",
-            
+
         },
 
         {
@@ -1949,61 +1949,61 @@ const ASIDE_ITEMS = {
             url: "/commonModule/institutional",
             name: "机构管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/job",
             name: "岗位管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/users",
             name: "用户管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/gencyList",
             name: "待办列表",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/workDayMgt",
             name: "工作日管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/sourceAdmin",
             name: "资源管理员管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/role",
             name: "角色管理",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/powerList",
             name: "页面访问权限",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/dataPower",
             name: "数据访问权限",
             icon: "el-icon-document",
-            
+
         },
         {
             url: "/commonModule/dataDictionaryMgt",
             name: "数据字典管理",
             icon: "el-icon-document",
-            
+
         }
     ],
     myPortal: [

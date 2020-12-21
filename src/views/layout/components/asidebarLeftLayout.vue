@@ -41,19 +41,23 @@
 
     export default {
         name: "leftnavbar",
-        props: ['modulese'],
         components: {menuList},
         data() {
             return {
                 asideNames: [],
             };
         },
+        computed: {
+          modulese() {
+              return this.$store.getters["layout/getModules"];
+          },
+          sideItems() {
+              return _.defaultsDeep({}, this.$store.getters["layout/getAsideItems"]);
+          }
+        },
         methods: {
             hoverMainMenu(item) {
-                let sideItems = _.defaultsDeep({}, this.GLOBAL.ASIDE_ITEMS);
-                let sideItem = sideItems[item.iname];
-
-
+                let sideItem = this.sideItems[item.iname];
                 let path = this.$route.path;
 
                 function extendObj(item) {

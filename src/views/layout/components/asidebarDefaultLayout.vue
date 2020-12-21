@@ -26,9 +26,8 @@
 
 <script>
     import $ from "jquery";
-    import _ from "lodash";
     import ClickedSubmenuList from "./clickedSubmenuList";
-
+    import _ from "lodash";
     export default {
         name: "asideBar",
         props: ["moduleName"],
@@ -40,6 +39,12 @@
                 asideNames: [],
                 isCollapse: false
             };
+        },
+        computed: {
+          sideItems() {
+              return _.defaultsDeep({}, this.$store.getters["layout/getAsideItems"]);
+          }
+
         },
         methods: {
             open(index, indexPath) {
@@ -67,8 +72,7 @@
             }
         },
         mounted: function () {
-            let sideItems = _.defaultsDeep({}, this.GLOBAL.ASIDE_ITEMS);
-            let sideItem = sideItems[this.moduleName];
+            let sideItem = this.sideItems[this.moduleName];
 
             this.asideNames = sideItem;
             this.asideActive = this.$route.path;

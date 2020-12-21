@@ -117,7 +117,7 @@
     export default {
         name: "headerbar",
         components: {HeaderbarUserDropdownMenu},
-        props: ["moduless", "showMainMenu"],
+        props: [ "showMainMenu"],
         data() {
             return {
                 popoverMenuVisible: false,//不显示下拉主菜单面板
@@ -127,7 +127,7 @@
         },
         computed: {
           moduleses() {
-              return this.moduless.filter(item => item.show);
+              return this.$store.getters["layout/getModules"];
           }
 
         },
@@ -163,7 +163,7 @@
         beforeMount: function () {
                 //页面初始化确定当前模块添加active类
                 let shows = this.$route.path.split("/")[1];
-                let item = _.find(this.moduless, item => item.iname == shows);
+                let item = _.find(this.moduleses, item => item.iname == shows);
                 this.$store.commit('layout/setActiveMainMenu', item.mname);
         }
     }

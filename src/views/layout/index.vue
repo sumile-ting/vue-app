@@ -2,13 +2,13 @@
     <div>
         <el-container >
             <el-header class="app-header" style="height: 55px;">
-                <headerBar :showMainMenu="layout == 'defaultlayout'" :moduless="modulese" @refreshAsideMenu="refreshChild" @refreshLayout="refreshLayout"></headerBar>
+                <headerBar :showMainMenu="layout == 'defaultlayout'"  @refreshAsideMenu="refreshChild" @refreshLayout="refreshLayout"></headerBar>
             </el-header>
-            <topNavBar :modulese="modulese" v-if="layout == 'toplayout'" ref="topNavBar"></topNavBar>
+            <topNavBar v-if="layout == 'toplayout'" ref="topNavBar"></topNavBar>
             <el-container>
                 <!-- v-if满足条件加载子组件 -->
                 <asideBar :moduleName="shows" v-if="layout == 'defaultlayout'"></asideBar>
-                <leftNavBar :modulese="modulese" v-if="layout == 'leftlayout'" ref="leftNavBar"></leftNavBar>
+                <leftNavBar v-if="layout == 'leftlayout'" ref="leftNavBar"></leftNavBar>
                 <el-container>
                     <el-main class="app-main" style="height:90vh;">
 
@@ -54,10 +54,6 @@
             key() {
                 return this.$route.fullPath;
             },
-
-            modulese() {
-                return  this.moduless;
-            }
         },
         methods: {
             goBack() {
@@ -93,6 +89,9 @@
             this.shows = this.$route.path.split("/")[1];
             let theme = window.localStorage.getItem('theme') || 'theme1';
             window.document.documentElement.setAttribute('data-theme', theme);
+        },
+        created() {
+             this.$store.dispatch('layout/getPermissions');
         }
     };
 </script>
